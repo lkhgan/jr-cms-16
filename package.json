@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "pm2 start src/index.js --name jrCMS16",
+    "poststart": "pm2 log jrCMS16",
+    "stop": "pm2 stop jrCMS16",
     "dev": "nodemon src/index.js"
   },
   "keywords": [],
